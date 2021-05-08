@@ -69,7 +69,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="customer" class="waves-effect"><i class="dripicons-archive"></i> <span> Customers </span> <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <a href="/customer" class="waves-effect"><i class="dripicons-archive"></i> <span> Customers </span> <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="advanced-alertify.html">Alertify</a></li>
                                     <li><a href="advanced-rating.html">Rating</a></li>
@@ -123,7 +123,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="/reviewsdashboard" class="waves-effect"><i class="dripicons-view-thumb"></i><span> Reviews </span> <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="dripicons-view-thumb"></i><span> Reviews </span> <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="tables-basic.html">Basic Tables</a></li>
                                     <li><a href="tables-datatable.html">Data Table</a></li>
@@ -302,22 +302,15 @@
                                     <div class="page-title-box">
                                         <div class="row align-items-center">
                                             <div class="col-md-8">
-                                                <h4 class="page-title m-0">Dashboard</h4>
+                                                <h4 class="page-title m-0">Delivery boys</h4>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="float-right d-none d-md-block">
-                                                    <div class="dropdown">
-                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <i class="ti-settings mr-1"></i> Settings
-                                                        </button>
-                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
-                                                            <a class="dropdown-item" href="#">Action</a>
-                                                            <a class="dropdown-item" href="#">Another action</a>
-                                                            <a class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div>
-                                                            <a class="dropdown-item" href="#">Separated link</a>
-                                                        </div>
-                                                    </div>
+                                         <input type="text" placeholder="search" id="txt12">
+                                         
+                                         <button class="btn btn-secondary">Add</button> 
+                                        
+                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- end col -->
@@ -328,72 +321,78 @@
                                 </div>
                             </div> 
                             <!-- end page title -->
-                            <i class="bi bi-cart-fill"></i>
 
-                            <div class="row">
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="card bg-primary mini-stat text-white">
-                                        <div class="p-3 mini-stat-desc">
-                                            <div class="clearfix">
-                                                <h6 class="text-uppercase mt-0 float-left text-white-50"><i class='	fas fa-cart-arrow-down'></i></h6>
-                                                <h4 class="mb-3 mt-0 float-right">5</h4>
-                                            </div>
-                                            <div>
-                                           <span class="ml-2">New Order <i class="bi bi-cart-fill"></i></span>
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-            
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="card bg-info mini-stat text-white">
-                                        <div class="p-3 mini-stat-desc">
-                                            <div class="clearfix">
-                                                <h6 class="text-uppercase mt-0 float-left text-white-50"><i class='fas fa-motorcycle'></i></h6>
-                                                <h4 class="mb-3 mt-0 float-right">2</h4>
-                                            </div>
-                                            <div>
-                                             <span class="ml-2">Total customers</span>
-                                            </div>
-                                        </div>
-                                      
-                                    </div>
-                                </div>
                                 
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="card bg-success mini-stat text-white">
-                                        <div class="p-3 mini-stat-desc">
-                                            <div class="clearfix">
-                                                <h6 class="text-uppercase mt-0 float-left text-white-50"><i class='far fa-comment-alt'></i></h6>
-                                                <h4 class="mb-3 mt-0 float-right">3</h4>
-                                            </div>
-                                            <div>
-                                             <span class="ml-2">Donates</span>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="card bg-info mini-stat text-white">
-                                        <div class="p-3 mini-stat-desc">
-                                            <div class="clearfix">
-                                                <h6 class="text-uppercase mt-0 float-left text-white-50"><i class='far fa-comment-alt'></i></h6>
-                                                <h4 class="mb-3 mt-0 float-right">4</h4>
-                                            </div>
-                                            <div>
-                                             <span class="ml-2">Guest</span>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>  
+                            
                             <!-- end row -->
             
-                           
+                         
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="mt-0 header-title mb-4">Latest Trasaction</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col"> <input type="checkbox"></th>
+                                                            <th scope="col">Staff id</th>
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Area</th>
+                                                            <th scope="col">Joining date</th>
+                                                            <th scope="col">Daily order</th>
+                                                            <th scope="col">Availability</th>
+                                                            <th scope="col">Delivery boy</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row"><input type="checkbox"></th>
+                                                            <td>135</td>
+                                                            <td>Jibu raju</td>
+                                                            <td>3 in one pack</td>
+                                                            <td>3/04/2021</td>
+                                                            <td>3/04/2021</td>
+                                                            <td>
+                                                                <div class="custom-control custom-switch">
+                                                                    <input type="checkbox" class="custom-control-input" id="customSwitches">
+                                                                    <label class="custom-control-label" for="customSwitches"></label>
+                                                                  </div>
+                                                            </td>
+                                                            <td>Jibu raju</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th></th>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        </tbody>
+                                                </table>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                           <!-- end row -->
+
+                        </div><!-- container fluid -->
+
+                    </div> <!-- Page content Wrapper -->
+
+                </div> <!-- content -->
+
+                <footer class="footer">
+                    © 2019 - 2020 Zinzer <span class="d-none d-md-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign.</span>
+                </footer>
+
+            </div>
             <!-- End Right content here -->
 
         </div>
@@ -402,3 +401,5 @@
 
       
     </div>
+
+

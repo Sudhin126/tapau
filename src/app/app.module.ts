@@ -10,6 +10,8 @@ import { AddpackagesDashboardComponent } from './addpackages-dashboard/addpackag
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceService } from './service/service.service';
+import { DeliveryboysDashboardComponent } from './deliveryboys-dashboard/deliveryboys-dashboard.component';
+import { ReviewsDashboardComponent } from './reviews-dashboard/reviews-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ServiceService } from './service/service.service';
     HomeComponent,
     PackagesComponent,
     CustomerComponent,
-    AddpackagesDashboardComponent
+    AddpackagesDashboardComponent,
+    DeliveryboysDashboardComponent,
+    ReviewsDashboardComponent
   ],
   imports: [
     BrowserModule,

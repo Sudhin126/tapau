@@ -111,7 +111,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="dripicons-graph-bar"></i><span> Delivery boys </span> <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <a href="/deliveryboysdashboard" class="waves-effect"><i class="dripicons-graph-bar"></i><span> Delivery boys </span> <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="charts-morris.html">Morris Chart</a></li>
                                     <li><a href="charts-chartist.html">Chartist Chart</a></li>
@@ -358,6 +358,16 @@
                                                                   </div>
                                                             </td>
                                                             <td>Jibu raju</td>
+                                                        </tr>
+                                                        <tr *ngFor="let customerCus of listss">
+                                                            <th>{{customerCus.phone}}</th>
+                                                            <td>{{customerCus.email}}</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
                                                         </tr>
                                                         </tbody>
                                                 </table>
