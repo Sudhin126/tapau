@@ -12,7 +12,8 @@ import { FormGroup, NgForm, Validators } from '@angular/forms';
 })
 export class CustomerComponent implements OnInit {
   //customerCus: CustomerCus[]=[];
- listss:CustomerCus []=[];
+  listss:CustomerCus []=[];
+
   //listss=[];
 
   constructor(private serviceService: ServiceService, private router: Router) { }
@@ -24,7 +25,7 @@ export class CustomerComponent implements OnInit {
     debugger;
     this.serviceService.getList().subscribe((data)=>{
       debugger;
-      this.listss = data;
+      this.listss = data["data"];
       // this.searches.sort((a,b) => a.coName.localeCompare(b.coName));
     });
 }

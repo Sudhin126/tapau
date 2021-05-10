@@ -1,26 +1,26 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CustomerCus } from '../model/customercus'
-
+import { Deliveryboys } from '../model/deliveryboys'
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceService {
-  private baseUrl = 'https://tapaubackend.herokuapp.com/api/v1/user/read';
+export class PackagesService {
+  private baseUrl = 'https://tapaubackend.herokuapp.com/api/v1';
+
   constructor(private http: HttpClient) { }
 
-
-  getList(): Observable<CustomerCus[]> {
-    return this.http.get<CustomerCus[]>(this.baseUrl);
+  getList(): Observable<Deliveryboys[]> {
+    return this.http.get<Deliveryboys[]>(this.baseUrl+"/package/all");
    }
+ 
    createList(CustomerCus: Object): Observable<Object> {
     debugger;
     return this.http.post(`${this.baseUrl}`, CustomerCus);
   }
-  deleteList(id: number): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/${id}`, { responseType: 'text' });
+  deleteList(id: string): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/package/delete/${id}`, { responseType: 'text' });
   }
   updateList(id: number, value: any): Observable<Object> {
     return this.http.put(`${this.baseUrl}/${id}`, value);
@@ -33,3 +33,4 @@ export class ServiceService {
 }
 
 }
+

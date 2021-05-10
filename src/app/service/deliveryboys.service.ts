@@ -1,19 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CustomerCus } from '../model/customercus'
-
+import { Deliveryboys } from '../model/deliveryboys'
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceService {
+export class DeliveryboysService {
   private baseUrl = 'https://tapaubackend.herokuapp.com/api/v1/user/read';
+
   constructor(private http: HttpClient) { }
 
-
-  getList(): Observable<CustomerCus[]> {
-    return this.http.get<CustomerCus[]>(this.baseUrl);
+  getList(): Observable<Deliveryboys[]> {
+    return this.http.get<Deliveryboys[]>(this.baseUrl);
    }
    createList(CustomerCus: Object): Observable<Object> {
     debugger;
@@ -33,3 +32,4 @@ export class ServiceService {
 }
 
 }
+

@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServiceService } from './service/service.service';
 import { DeliveryboysDashboardComponent } from './deliveryboys-dashboard/deliveryboys-dashboard.component';
 import { ReviewsDashboardComponent } from './reviews-dashboard/reviews-dashboard.component';
+import { DeliveryboysService } from './service/deliveryboys.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReviewsDashboardComponent } from './reviews-dashboard/reviews-dashboard
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [ServiceService],
+  providers: [ServiceService,
+    DeliveryboysService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
