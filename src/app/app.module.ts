@@ -13,6 +13,9 @@ import { ServiceService } from './service/service.service';
 import { DeliveryboysDashboardComponent } from './deliveryboys-dashboard/deliveryboys-dashboard.component';
 import { ReviewsDashboardComponent } from './reviews-dashboard/reviews-dashboard.component';
 import { DeliveryboysService } from './service/deliveryboys.service';
+import { OrdersComponent } from './orders/orders.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { DashboardMainComponent } from './dashboard-main/dashboard-main.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { DeliveryboysService } from './service/deliveryboys.service';
     CustomerComponent,
     AddpackagesDashboardComponent,
     DeliveryboysDashboardComponent,
-    ReviewsDashboardComponent
+    ReviewsDashboardComponent,
+    OrdersComponent,
+    TransactionsComponent,
+    DashboardMainComponent
   ],
   imports: [
     BrowserModule,
