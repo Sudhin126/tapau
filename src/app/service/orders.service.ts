@@ -6,7 +6,7 @@ import { Deliveryboys } from '../model/deliveryboys'
   providedIn: 'root'
 })
 export class OrdersService {
-  private baseUrl = 'https://tapaubackend.herokuapp.com/api/v1/user/read';
+  private baseUrl = 'https://tapaubackend.herokuapp.com/api/v1/delivery/read';
 
   constructor(private http: HttpClient) { }
   getList(): Observable<Deliveryboys[]> {
