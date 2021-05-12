@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Deliveryboys } from '../model/deliveryboys'
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PackagesService {
-  private baseUrl = 'https://tapaubackend.herokuapp.com/api/v1';
+  public baseUrl = environment.api;
+  //private baseUrl = 'https://tapaubackend.herokuapp.com/api/v1';
 
   constructor(private http: HttpClient) { }
 
