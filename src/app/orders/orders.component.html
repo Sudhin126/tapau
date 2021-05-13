@@ -200,31 +200,22 @@
                                                     <tbody>
                                                         <tr  *ngFor="let serve of listss">
                                                             <th scope="row"><input type="checkbox"></th>
-                                                            <td>135</td>
-                                                            <td>Jibu raju</td>
+                                                            <td></td>
+                                                            <td>{{serve.user_id.full_name}}</td>
                                                             <td>3 in one pack</td>
-                                                            <td>3/04/2021</td>
+                                                            <td>{{serve.date_purchased|date}}</td>
                                                             <td>3/04/2021</td>
                                                             <td>
-                                                                <div class="custom-control custom-switch">
-                                                                    <input type="checkbox" class="custom-control-input" id="customSwitches">
-                                                                    <label class="custom-control-label" for="customSwitches"></label>
-                                                                  </div>
+                                                                <button class="btn btn-warning" id="bt">paid</button>
                                                             </td>
-                                                            <td><form >
-                                                                <select >
-                                                                  <option  *ngFor="let serve of listss" value="Raju">{{serve.full_name}}</option>
-                                                               
-                                                                </select>
-                                                              </form></td>
-                                                              <td><button type="button" class="btn btn-danger">Assign Delivery Boy</button></td>
+                                                           <td><button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#myModal">Assign Delivery Boy</button></td>
                                                         </tr>
                                                         <tr>
                                                             <th></th>
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
-                                                                                 <td></td>
+                                                            <td></td>
                                                             <td></td>
                                                             <td></td>
                                                             <td></td>
@@ -244,6 +235,81 @@
                     </div> <!-- Page content Wrapper -->
 
                 </div> <!-- content -->
+                <!-- popup -->
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-3 m-t-30">
+                        <div class=" text-center">
+
+                            
+                        </div>
+
+                        <!-- sample modal content -->
+                        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title mt-0" id="myModalLabel">Modal Heading</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5 class="font-16">Overflowing text to show scroll behavior</h5>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <form>
+                                                     <select>
+                                                  <option value="volvo">Volvo</option>
+                                                  <option value="saab">Saab</option>
+                                                  <option value="mercedes">Mercedes</option>
+                                                  <option value="audi">Audi</option>
+                                                </select>
+                                              </form>
+                                            </div>
+                                            <div class="col-4">
+                                                <form>
+                                                <select>
+                                                    <option value="volv">Volvo</option>
+                                                    <option value="saa">Saab</option>
+                                                    <option value="mercede">Mercedes</option>
+                                                    <option value="aud">Audi</option>
+                                                  </select>
+                                                </form>
+                                                </div>
+                                            <div class="col-4">
+                                                <form>
+                                                    <select>
+                                                        <option value="vol">Volvo</option>
+                                                        <option value="sa">Saab</option>
+                                                        <option value="merced">Mercedes</option>
+                                                        <option value="au">Audi</option>
+                                                      </select>
+                                                    </form>
+                                            </div>
+                                        </div> <br>
+                                        <div class="row">
+                                            <div class="col-4"><p><button class="btn btn-primary">BREAKFAST</button></p></div>
+                                            <div class="col-4"><p><button class="btn btn-primary">LUNCH</button></p></div>
+                                            <div class="col-4"><p><button class="btn btn-primary">DINNER</button></p></div>
+                                        </div>
+                                       
+                                       
+                                       </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary waves-effect waves-light">Save</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                    </div>
+  
+                    <!-- popup end-->
+                      
+                  
+                  
+                  
 
                 <footer class="footer">
                     © 2019 - 2020 Zinzer <span class="d-none d-md-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign.</span>
@@ -258,5 +324,4 @@
 
       
     </div>
-
-
+    

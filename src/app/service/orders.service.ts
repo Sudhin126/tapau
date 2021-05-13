@@ -13,7 +13,7 @@ export class OrdersService {
 
   constructor(private http: HttpClient) { }
   getList(): Observable<Deliveryboys[]> {
-    return this.http.get<Deliveryboys[]>(this.baseUrl+"/delivery/read");
+    return this.http.get<Deliveryboys[]>(this.baseUrl+"/order/read");
    }
    createList(CustomerCus: Object): Observable<Object> {
     debugger;
