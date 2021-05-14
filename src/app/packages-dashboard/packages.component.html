@@ -160,8 +160,8 @@
                                             </div>
                                             <div class="col-md-4">
                                        <div class="float-right d-none d-md-block">
-                                  <a routerLink="/addpackagesdashboard" routerLinkActive="active" class="btn btn-primary" type="button">  Add package
-                             </a>
+                                  <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-lg">  Add package </button>
+                            
                                     </div>
                             </div>
                             <!-- end col -->
@@ -184,16 +184,167 @@
 
                         <div class="d-flex justify-content-center">
                         <div class="d-flex justify-content-between">
-                        <a class="btn btn-primary waves-effect waves-light" >Edit</a> 
+                        <a class="btn btn-primary waves-effect waves-light" id="bt" >Edit</a> 
                         </div>
                         <div class="d-flex justify-content-between">
-                                <a class="btn btn-primary waves-effect waves-light" (click)="deleteList(serve._id)">Delete</a>
+                                <a class="btn btn-primary waves-effect waves-light" (click)="deleteList(serve._id)" >Delete</a>
                                 </div>
                             </div>
                         </div>
                 </div>
             </div>
         </div>
+                      <!-- popup -->
+                      <div class="col-sm-6 col-md-3 m-t-30">
+                        <div class="text-center">
+                    
+                        </div>
+        
+        
+                        <!--  Modal content for the above example -->
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title mt-0" id="myLargeModalLabel">Packages</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                       
+                <span>Product Name</span>
+                <div class=container>
+                <div class="row" id="pck11">
+                 <div class="col-3"><button  class="btn btn-outline-secondary waves-effect" type="button">BREAKFAST</button></div>
+                 <div class="col-3"></div>
+                 <div class="col-3"> <span>Categories</span> <br>
+                     <button class="btn btn-outline-secondary waves-effect" type="button"> Single</button>
+                    </div>
+                 <div class="col-3"><span>Nos</span> <br>
+                     <button class="btn btn-outline-secondary waves-effect" type="button">1</button></div>
+        
+               
+                </div>
+                
+                <div class="row" id="pck11">
+                    <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button">LUNCH</button></div>
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-secondary waves-effect" type="button">group</button>
+                       </div>
+                    <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button">5</button></div>
+           
+                    
+                   </div> 
+                   
+                   <div class="row" id="pck11">
+                    <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button">DINNER</button></div>
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-secondary waves-effect" type="button">Family</button>
+                       </div>
+                    <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button">4</button></div>
+           
+                    
+                   </div>
+                   
+                   <div class="row" id="pck11">
+                    <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button">+ADD NEW</button></div>
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+           </div> 
+           <div class="row" id="prod">
+           <div class="col-6">Product Details</div>
+           <div class="col-6">Categories <br>
+            <div class="btn-group m-b-10">
+                <button type="button" class="btn btn-secondary">Single</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+           </div>
+           </div>
+           </div>
+           <div class="row">
+            <div class="col-6">Package Name</div>
+            <div class="col-6"></div>
+             
+        </div>
+        <div class="row">
+            <div class="col-6"><input type="text"></div>
+            <div class="col-3">Product Name</div>
+            <div class="col-3">Pricing</div>
+           
+            </div> 
+            <div class="row" id="pkt11">
+                <div class="col-6"><input type="text"></div>
+                <div class="col-3"><input type="text"></div>
+                <div class="col-3"><input type="text"></div>
+               
+                </div> <br>
+                <div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-3"><input type="text"><br> </div> 
+                    <div class="col-3"><input type="text"></div>
+                   
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-3"><input type="text"><br> </div> 
+                        <div class="col-3"><input type="text"></div>
+                       
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-3"> </div> 
+                            <div class="col-3"><input type="text"></div>
+                           
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-6"></div>
+                                <div class="col-3"> </div> 
+                                <div class="col-3"><input type="text"></div>
+                               
+                                </div>
+                                      
+                                        
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="col-6">
+                                                   <h5 class="mb-12">Product Description</h5>
+                                                    <textarea class="pd2" name="content" id="ckEditorClassic"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                            </div> <br>
+                          <div class="row">
+                          <div class="col-6"></div>
+                          <div class="col-3"></div>
+                          <div class="col-3"><button class="btn btn-primary" >Submit</button> </div>
+        
+                          </div>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                    </div>
+        
+                   
+                            
+        
+                           <!-- popup end -->
         
 
                 <!-- end cards -->
