@@ -8,8 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./packages.component.css']
 })
 export class PackagesComponent implements OnInit {
+  files: File[] = [];
   
-packk=[];
+  packk=[];
   constructor(private packagesService: PackagesService, private router: Router) { }
 
   ngOnInit(): void {
@@ -32,5 +33,16 @@ deleteList(id:string) {
       },
       error => console.log(error));
 }
+
+
+	onSelect(event) {
+		console.log(event);
+		this.files.push(...event.addedFiles);
+	}
+
+	onRemove(event) {
+		console.log(event);
+		this.files.splice(this.files.indexOf(event), 1);
+	}
 
 }

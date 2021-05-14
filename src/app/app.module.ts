@@ -16,6 +16,7 @@ import { DeliveryboysService } from './service/deliveryboys.service';
 import { OrdersComponent } from './orders/orders.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { DashboardMainComponent } from './dashboard-main/dashboard-main.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { DashboardMainComponent } from './dashboard-main/dashboard-main.componen
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgxDropzoneModule
   ],
   providers: [ServiceService,
     DeliveryboysService ],
