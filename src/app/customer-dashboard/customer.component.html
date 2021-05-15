@@ -43,11 +43,11 @@
                                </li>
 
                             <li>
-                                <a routerLink="/Transactions" routerLinkActive="active" class="waves-effect"><i class="dripicons-calendar"></i><span> Transactions </span></a>
+                                <a routerLink="/transactions" routerLinkActive="active" class="waves-effect"><i class="dripicons-calendar"></i><span> Transactions </span></a>
                             </li>
 
                             <li class="has_sub">
-                                <a routerLink="/ Marketing staffs" routerLinkActive="active" class="waves-effect"><i class="dripicons-document"></i><span> Marketing staffs </span></a>
+                                <a routerLink="/marketingstaffs" routerLinkActive="active" class="waves-effect"><i class="dripicons-document"></i><span> Marketing staffs </span></a>
                               </li>
 
                             <li class="has_sub">
@@ -198,12 +198,12 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
+                                                        <tr  *ngFor="let serve of listss">
                                                             <th scope="row"><input type="checkbox"></th>
                                                             <td>135</td>
-                                                            <td>Jibu raju</td>
+                                                            <td>{{serve.full_name}}</td>
                                                             <td>3 in one pack</td>
-                                                            <td>3/04/2021</td>
+                                                            <td>{{serve.created_date|date}}</td>
                                                             <td>3/04/2021</td>
                                                             <td>
                                                                 <div class="custom-control custom-switch">
@@ -213,7 +213,7 @@
                                                             </td>
                                                             <td>Jibu raju</td>
                                                         </tr>
-                                                        <tr *ngFor="let serve of listss">
+                                                        <tr>
                                                             <th></th>
                                                             <td></td>
                                                             <td></td>

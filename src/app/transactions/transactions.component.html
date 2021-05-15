@@ -1,10 +1,258 @@
 
 
-<app-dashboard-main> hii</app-dashboard-main>
-<div class="container">
-    <div class="row"></div>
-    <div class="col-12">hello</div>
-
-    ggg
-</div>
     
+
+
+
+    <div class="fixed-left">
+
+        <!-- Begin page -->
+           <div id="wrapper">
+   
+               <!-- ========== Left Sidebar Start ========== -->
+               <div class="left side-menu">
+                   <button type="button" class="button-menu-mobile button-menu-mobile-topbar open-left waves-effect">
+                       <i class="mdi mdi-close"></i>
+                   </button>
+   
+                   <div class="left-side-logo d-block d-lg-none">
+                       <div class="text-center">
+                           
+                           <a href="index.html" class="logo"><img src="assets/images/logo_dark.png" height="20" alt="logo"></a>
+                       </div>
+                   </div>
+   
+                   <div class="sidebar-inner slimscrollleft">
+                       
+                       <div id="sidebar-menu">
+                           <ul>
+                               <li class="menu-title">Main</li>
+   
+                               <li>
+                                   <a href="index.html" class="waves-effect">
+                                       <i class="dripicons-home"></i>
+                                       <span> Dashboard</span>
+                                   </a>
+                               </li>
+   
+                               <li class="has_sub">
+                                   <a routerLink="/packages" routerLinkActive="active" class="waves-effect"><i class="dripicons-briefcase"></i> <span> Packages </span></a>
+                               </li>
+   
+                               <li class="has_sub">
+                                   <a routerLink="/customer" routerLinkActive="active" class="waves-effect"><i class="dripicons-archive"></i> <span> Customers </span> </a>
+                                  </li>
+   
+                               <li class="has_sub">
+                                   <a routerLink="/orders" routerLinkActive="active" class="waves-effect"><i class="dripicons-rocket"></i> <span> Orders </span> </a>
+                                  </li>
+   
+                               <li>
+                                   <a routerLink="/transactions" routerLinkActive="active" class="waves-effect"><i class="dripicons-calendar"></i><span> Transactions </span></a>
+                               </li>
+   
+                               <li class="has_sub">
+                                   <a routerLink="/marketingstaffs" routerLinkActive="active" class="waves-effect"><i class="dripicons-document"></i><span> Marketing staffs </span></a>
+                                 </li>
+   
+                               <li class="has_sub">
+                                   <a routerLink="/deliveryboysdashboard" routerLinkActive="active" class="waves-effect"><i class="dripicons-graph-bar"></i><span> Delivery boys </span></a>
+                                   </li>
+   
+                               <li class="has_sub">
+                                   <a routerLink="/reviewsdashboard" routerLinkActive="active" class="waves-effect"><i class="dripicons-view-thumb"></i><span> Reviews </span></a>
+                                   </li>
+   
+                                <li class="has_sub">
+                                   <a  routerLink="/Sub-admins" routerLinkActive="active" class="waves-effect"><i class="dripicons-location"></i><span> Sub-admins </span></a>
+                                  </li>
+   
+                        </ul>
+                       </div>
+                       <div class="clearfix"></div>
+                   </div> <!-- end sidebarinner -->
+               </div>
+              
+   
+               <div class="content-page">
+                   <!-- Start content -->
+                   <div class="content">
+   
+                       <!-- Top Bar Start -->
+                       <div class="topbar">
+   
+                           <div class="topbar-left	d-none d-lg-block">
+                               <div class="text-center">
+                                   <a href="index.html" class="logo"><img src="assets/images/logo.png" height="22" alt="logo"></a>
+                               </div>
+                           </div>
+   
+                           <nav class="navbar-custom">
+                              <ul class="list-inline float-right mb-0">
+                                   <li class="list-inline-item dropdown notification-list">
+                                       <a class="nav-link waves-effect toggle-search" href="#"  data-target="#search-wrap">
+                                           <i class="mdi mdi-magnify noti-icon"></i>
+                                       </a>
+                                   </li>
+   
+                                   <li class="list-inline-item dropdown notification-list">
+                                       <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="false" aria-expanded="false">
+                                           <i class="mdi mdi-bell-outline noti-icon"></i>
+                                       
+                                       </a>
+                                       <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg dropdown-menu-animated">
+                                           <!-- item-->
+                                           <div class="dropdown-item noti-title">
+                                               <h5>Notification</h5>
+                                           </div>
+                                            <!-- All-->
+                                           <a href="javascript:void(0);" class="dropdown-item notify-all">
+                                               View All
+                                           </a>
+   
+                                       </div>
+                                   </li>
+       
+   
+                                   <li class="list-inline-item dropdown notification-list nav-user">
+                                       <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="false" aria-expanded="false">
+                                           <img src="assets/images/users/avatar-6.jpg" alt="user" class="rounded-circle">
+                                           <span class="d-none d-md-inline-block ml-1">Admin <i class="mdi mdi-chevron-down"></i> </span>
+                                       </a>
+                                       <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
+                                           <a class="dropdown-item" href="#"><i class="dripicons-user text-muted"></i> Profile</a>
+                                           <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted"></i> My Wallet</a>
+                                           <a class="dropdown-item" href="#"><span class="badge badge-success float-right m-t-5">5</span><i class="dripicons-gear text-muted"></i> Settings</a>
+                                           <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted"></i> Lock screen</a>
+                                           <div class="dropdown-divider"></div>
+                                           <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted"></i> Logout</a>
+                                       </div>
+                                   </li>
+   
+                               </ul>
+   
+                               <ul class="list-inline menu-left mb-0">
+                                   <li class="list-inline-item">
+                                       <button type="button" class="button-menu-mobile open-left waves-effect">
+                                           <i class="mdi mdi-menu"></i>
+                                       </button>
+                                   </li>
+                                   </ul>
+                             </nav>
+                        </div>
+                       <!-- Top Bar End -->
+   
+                       <div class="page-content-wrapper ">
+   
+                           <div class="container-fluid">
+   
+                               <div class="row">
+                                   <div class="col-sm-12">
+                                       <div class="page-title-box">
+                                           <div class="row align-items-center">
+                                               <div class="col-md-8">
+                                                   <h4 class="page-title m-0">Transactions</h4>
+                                               </div>
+                                               <div class="col-md-4">
+                                                   <div class="float-right d-none d-md-block">
+                                            <input type="text" placeholder="search" id="txt12">
+                                            
+                                            <button class="btn btn-secondary">Add</button> 
+                                           
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <!-- end col -->
+                                           </div>
+                                           <!-- end row -->
+                                       </div>
+                                       <!-- end page-title-box -->
+                                   </div>
+                               </div> 
+                               <!-- end page title -->
+   
+                                   
+                               
+                               <!-- end row -->
+               
+                            
+                               <div class="row">
+                                   <div class="col-xl-12">
+                                       <div class="card">
+                                           <div class="card-body">
+                                               <h4 class="mt-0 header-title mb-4">Latest Trasaction</h4>
+                                               <div class="table-responsive">
+                                                   <table class="table table-hover">
+                                                       <thead>
+                                                           <tr>
+                                                               <th scope="col"> <input type="checkbox"></th>
+                                                               <th scope="col">Staff id</th>
+                                                               <th scope="col">Name</th>
+                                                               <th scope="col">Area</th>
+                                                               <th scope="col">Joining date</th>
+                                                               <th scope="col">Daily order</th>
+                                                               <th scope="col">Availability</th>
+                                                               <th scope="col">Delivery boy</th>
+                                                           </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                           <tr>
+                                                               <th scope="row"><input type="checkbox"></th>
+                                                               <td>135</td>
+                                                               <td>Jibu raju</td>
+                                                               <td>3 in one pack</td>
+                                                               <td>3/04/2021</td>
+                                                               <td>3/04/2021</td>
+                                                               <td>
+                                                                   <div class="custom-control custom-switch">
+                                                                       <input type="checkbox" class="custom-control-input" id="customSwitches">
+                                                                       <label class="custom-control-label" for="customSwitches"></label>
+                                                                     </div>
+                                                               </td>
+                                                               <td>Jibu raju</td>
+                                                           </tr>
+                                                           <tr  *ngFor="let serve of packk">
+                                                               <th></th>
+                                                               <td></td>
+                                                               <td></td>
+                                                               <td></td>
+                                                               <td></td>
+                                                               <td></td>
+                                                               <td></td>
+                                                               <td></td>
+                                                           </tr>
+                                                       
+                                                           </tbody>
+                                                   </table>
+                                               </div>
+               
+                                           </div>
+                                       </div>
+                                   </div>
+                                  
+                              <!-- end row -->
+   
+                           </div><!-- container fluid -->
+   
+                       </div> <!-- Page content Wrapper -->
+   
+                   </div> <!-- content -->
+   
+                   <footer class="footer">
+                       © 2019 - 2020 Zinzer <span class="d-none d-md-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign.</span>
+                   </footer>
+   
+               </div>
+               <!-- End Right content here -->
+   
+           </div>
+           <!-- END wrapper -->
+   
+   
+         
+       </div>
+   
+   
+   

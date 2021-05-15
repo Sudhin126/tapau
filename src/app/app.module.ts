@@ -9,7 +9,7 @@ import { CustomerComponent } from './customer-dashboard/customer.component';
 import { AddpackagesDashboardComponent } from './addpackages-dashboard/addpackages-dashboard.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ServiceService } from './service/service.service';
+import { ServiceService } from './service/customer.service';
 import { DeliveryboysDashboardComponent } from './deliveryboys-dashboard/deliveryboys-dashboard.component';
 import { ReviewsDashboardComponent } from './reviews-dashboard/reviews-dashboard.component';
 import { DeliveryboysService } from './service/deliveryboys.service';

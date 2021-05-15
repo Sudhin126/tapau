@@ -44,11 +44,11 @@
                                </li>
 
                             <li>
-                                <a routerLink="/Transactions" routerLinkActive="active" class="waves-effect"><i class="dripicons-calendar"></i><span> Transactions </span></a>
+                                <a routerLink="/transactions" routerLinkActive="active" class="waves-effect"><i class="dripicons-calendar"></i><span> Transactions </span></a>
                             </li>
 
                             <li class="has_sub">
-                                <a routerLink="/ Marketing staffs" routerLinkActive="active" class="waves-effect"><i class="dripicons-document"></i><span> Marketing staffs </span></a>
+                                <a routerLink="/marketingstaffs" routerLinkActive="active" class="waves-effect"><i class="dripicons-document"></i><span> Marketing staffs </span></a>
                               </li>
 
                             <li class="has_sub">
@@ -206,7 +206,7 @@
                                                             <td>{{serve.date_purchased|date}}</td>
                                                             <td>3/04/2021</td>
                                                             <td>
-                                                                <button class="btn btn-warning" id="bt">paid</button>
+                                                                <button class="btn btn-warning" id="bt">{{serve.status}}</button>
                                                             </td>
                                                            <td><button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#myModal">Assign Delivery Boy</button></td>
                                                         </tr>
