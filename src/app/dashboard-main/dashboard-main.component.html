@@ -3,7 +3,7 @@
 
     <div class="fixed-left">
 
-        
+       
 
         <!-- Begin page -->
         <div id="wrapper">
@@ -26,48 +26,47 @@
                     <div id="sidebar-menu">
                         <ul>
                             <li class="menu-title">Main</li>
-
-                            <li>
+                              <li>
                                 <a href="index.html" class="waves-effect">
                                     <i class="dripicons-home"></i>
-                                    <span> Dashboard <span class="badge badge-success badge-pill float-right">3</span></span>
+                                    <span> Dashboard </span>
                                 </a>
                             </li>
+
                             <li class="has_sub">
                                 <a routerLink="/packages" routerLinkActive="active" class="waves-effect"><i class="dripicons-briefcase"></i> <span> Packages </span></a>
-                               </li>
+                            </li>
 
                             <li class="has_sub">
                                 <a routerLink="/customer" routerLinkActive="active" class="waves-effect"><i class="dripicons-archive"></i> <span> Customers </span> </a>
-                            </li>
+                               </li>
 
                             <li class="has_sub">
-                                <a routerLink="/orders" routerLinkActive="active" class="waves-effect"><i class="dripicons-rocket"></i> <span> Orders </span></a>
-                              </li>
+                                <a routerLink="/orders" routerLinkActive="active" class="waves-effect"><i class="dripicons-rocket"></i> <span> Orders </span> </a>
+                               </li>
 
                             <li>
-                                <a routerLink="/transactions" routerLinkActive="active" class="waves-effect"><i class="dripicons-calendar"></i><span> Transactions </span></a>
+                                <a routerLink="/Transactions" routerLinkActive="active" class="waves-effect"><i class="dripicons-calendar"></i><span> Transactions </span></a>
                             </li>
 
                             <li class="has_sub">
-                                <a routerLink="/Marketing staffs" routerLinkActive="active" class="waves-effect"><i class="dripicons-document"></i><span> Marketing staffs </span></a>
-                               </li>
+                                <a routerLink="/ Marketing staffs" routerLinkActive="active" class="waves-effect"><i class="dripicons-document"></i><span> Marketing staffs </span></a>
+                              </li>
 
                             <li class="has_sub">
-                                <a routerLink="/Deliveryboys" routerLinkActive="active" class="waves-effect"><i class="dripicons-graph-bar"></i><span> Delivery boys </span></a>
-                               </li>
-
-                            <li class="has_sub">
-                                <a routerLink="/Reviews" routerLinkActive="active" class="waves-effect"><i class="dripicons-view-thumb"></i><span> Reviews </span> </a>
+                                <a routerLink="/deliveryboysdashboard" routerLinkActive="active" class="waves-effect"><i class="dripicons-graph-bar"></i><span> Delivery boys </span></a>
                                 </li>
 
                             <li class="has_sub">
-                                <a routerLink="/Sub-admins" routerLinkActive="active" class="waves-effect"><i class="dripicons-location"></i><span> Sub-admins </span></a>
+                                <a routerLink="/reviewsdashboard" routerLinkActive="active" class="waves-effect"><i class="dripicons-view-thumb"></i><span> Reviews </span></a>
                                 </li>
-                            </ul>
+
+                             <li class="has_sub">
+                                <a  routerLink="/Sub-admins" routerLinkActive="active" class="waves-effect"><i class="dripicons-location"></i><span> Sub-admins </span></a>
+                               </li>
+
+                     </ul>
                     </div>
-
-                          
                     <div class="clearfix"></div>
                 </div> <!-- end sidebarinner -->
             </div>
@@ -113,14 +112,21 @@
                                         <i class="mdi mdi-bell-outline noti-icon"></i>
                                         <span class="badge badge-danger badge-pill noti-icon-badge">3</span>
                                     </a>
-                                    
-                                      
-                                        <!-- All-->
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg dropdown-menu-animated">
+                                        <!-- item-->
+                                        <div class="dropdown-item noti-title">
+                                            <h5>Notification</h5>
+                                        </div>
+
+                                        <div class="slimscroll-noti">
+                                            <!-- item-->
+                                          </div>
+                                         <!-- All-->
                                         <a href="javascript:void(0);" class="dropdown-item notify-all">
                                             View All
                                         </a>
 
-                                
+                                    </div>
                                 </li>
     
 
@@ -144,60 +150,52 @@
 
                             <ul class="list-inline menu-left mb-0">
                                 <li class="list-inline-item">
-                                    <button type="button" class="button-menu-mobile open-left waves-effect">
+                                    <button type="button" class="button-menu-mobile open-left waves-effect" >
                                         <i class="mdi mdi-menu"></i>
                                     </button>
                                 </li>
-                                <li class="list-inline-item dropdown notification-list d-none d-sm-inline-block">
-                                    <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="false" aria-expanded="false">
-                                        Create New <i class="mdi mdi-plus"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-animated">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item notification-list d-none d-sm-inline-block">
-                                    <a href="#" class="nav-link waves-effect">
-                                        Activity
-                                    </a>
-                                </li>
-
-                            </ul>
-
-
-                        </nav>
-
-                    </div>
+                                </ul>
+                            </nav>
+                         </div>
                     <!-- Top Bar End -->
 
                     <div class="page-content-wrapper ">
-
                         <div class="container-fluid">
-
-                            
+                           <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="page-title-box">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-8">
+                                                <h4 class="page-title m-0">Dashboard</h4>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="float-right d-none d-md-block">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="ti-settings mr-1"></i> Settings
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated">
+                                                            <a class="dropdown-item" href="#">Action</a>
+                                                            <a class="dropdown-item" href="#">Another action</a>
+                                                            <a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" href="#">Separated link</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end col -->
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                    <!-- end page-title-box -->
+                                </div>
+                            </div> 
                             <!-- end page title -->
-
-                                
-                            
+                         
                             <!-- end row -->
             
-                         
                            
-                                            
-                           <!-- end row -->
-
-                         <!-- content -->
-
-                <footer class="footer">
-                    © 2019 - 2020 Zinzer <span class="d-none d-md-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign.</span>
-                </footer>
-
-            </div>
             <!-- End Right content here -->
 
         </div>
@@ -206,5 +204,3 @@
 
       
     </div>
-
-

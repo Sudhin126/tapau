@@ -172,7 +172,7 @@
         <span>Product Name</span>
         <div class=container>
         <div class="row" id="pck11">
-         <div class="col-3"><button  class="btn btn-outline-secondary waves-effect" type="button">BREAKFAST</button></div>
+         <div class="col-3"><button  class="btn btn-outline-secondary waves-effect" type="button" id="brk13">BREAKFAST</button></div>
          <div class="col-3"></div>
          <div class="col-3"> <span>Categories</span> <br>
              <button class="btn btn-outline-secondary waves-effect" type="button"> Single</button>
@@ -184,7 +184,7 @@
         </div>
         
         <div class="row" id="pck11">
-            <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button">LUNCH</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button" id="brk13">LUNCH</button></div>
             <div class="col-3"></div>
             <div class="col-3">
                 <button class="btn btn-outline-secondary waves-effect" type="button">group</button>
@@ -195,7 +195,7 @@
            </div> 
            
            <div class="row" id="pck11">
-            <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button">DINNER</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button" id="brk13">DINNER</button></div>
             <div class="col-3"></div>
             <div class="col-3">
                 <button class="btn btn-outline-secondary waves-effect" type="button">Family</button>
@@ -206,7 +206,7 @@
            </div>
            
            <div class="row" id="pck11">
-            <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button">+ADD NEW</button></div>
+            <div class="col-3"><button class="btn btn-outline-secondary waves-effect" type="button" id="brk13">+ADD NEW</button></div>
             <div class="col-3"></div>
             <div class="col-3"></div>
             <div class="col-3"></div>
@@ -241,7 +241,16 @@
    
     </div> 
     <div class="row" id="pkt11">
-        <div class="col-6"><input type="text"></div>
+        <div class="col-6"><div class="custom-dropzone" ngx-dropzone [accept]="'image/*'" (change)="onSelect($event)" id="dradro">
+            <ngx-dropzone-label>
+                <div>
+                    <h2>Drag Your Image</h2>
+                </div>
+            </ngx-dropzone-label>
+            <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)">
+                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+            </ngx-dropzone-image-preview>
+        </div> </div> 
         <div class="col-3"><input type="text"></div>
         <div class="col-3"><input type="text"></div>
        
