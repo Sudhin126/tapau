@@ -17,6 +17,8 @@ import { OrdersComponent } from './orders/orders.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { DashboardMainComponent } from './dashboard-main/dashboard-main.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
+import { DemoComponent } from './demo/demo.component';
+import { Demo2Component } from './demo2/demo2.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
     ReviewsDashboardComponent,
     OrdersComponent,
     TransactionsComponent,
-    DashboardMainComponent
+    DashboardMainComponent,
+    DemoComponent,
+    Demo2Component
   ],
   imports: [
     BrowserModule,

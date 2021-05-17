@@ -9,6 +9,8 @@ import { ReviewsDashboardComponent } from './reviews-dashboard/reviews-dashboard
 import { OrdersComponent } from './orders/orders.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { DashboardMainComponent } from './dashboard-main/dashboard-main.component';
+import { DemoComponent } from './demo/demo.component';
+import { Demo2Component } from './demo2/demo2.component';
 
 
 const routes: Routes = [
@@ -21,7 +23,9 @@ const routes: Routes = [
   { path: 'reviewsdashboard', component: ReviewsDashboardComponent },
   { path: 'orders', component: OrdersComponent },
   { path: 'transactions', component: TransactionsComponent },
-  { path: 'dashboardmain', component: DashboardMainComponent }
+  { path: 'dashboardmain', component: DashboardMainComponent },
+  { path: 'demo', component: DemoComponent },
+  { path: 'demo2', component: Demo2Component }
 ];
 
 @NgModule({
